@@ -14,6 +14,6 @@ public class Calculator {
     }
 
     public static double division(int nr1, int nr2) {
-        return (double)nr1 / nr2;
+        return (double) nr1 / nr2;
     }
 }
