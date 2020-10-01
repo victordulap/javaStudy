@@ -26,6 +26,6 @@ public class Calculator {
         return (double) nr1 / nr2;
     }
     public static double division(double nr1, double nr2) {
-        return  nr1 / nr2;
+        return   nr1 / nr2;
     }
 }
