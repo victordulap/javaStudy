@@ -34,4 +34,9 @@ public class Person implements Comparable<Person> {
         // birthDate
         // return birthDate.compareTo(o.birthDate);
     }
+
+    @Override
+    public String toString() {
+        return this.name + " / " + this.birthDate;
+    }
 }
