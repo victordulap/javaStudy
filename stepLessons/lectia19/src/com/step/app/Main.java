@@ -28,7 +28,7 @@ public class Main {
         System.out.println("before sort");
         for (int i = 0; i < people.size(); i++) {
             //System.out.println(people.get(i).getName() + " / " + people.get(i).getBirthDate());
-            System.out.println(people.get(i).toString());
+            System.out.println(people.get(i));
         }
 
 //        people.sort(Person::compareTo);
@@ -38,7 +38,7 @@ public class Main {
         System.out.println("after sort");
         for (int i = 0; i < people.size(); i++) {
             //System.out.println(people.get(i).getName() + " / " + people.get(i).getBirthDate());
-            System.out.println(people.get(i).toString());
+            System.out.println(people.get(i));
         }
     }
 }
