@@ -1,6 +1,6 @@
-package com.step.app;
+package com.step.ex1.app;
 
-import com.step.data.Person;
+import com.step.ex1.app.data.Person;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
@@ -38,6 +38,9 @@ public class Main {
         System.out.println("after sort");
         for (int i = 0; i < people.size(); i++) {
             //System.out.println(people.get(i).getName() + " / " + people.get(i).getBirthDate());
+
+            //  System.out.println singur cheama toString asa ca noi nu suntem nevoiti sa chemam
+            //System.out.println(people.get(i).toString());
             System.out.println(people.get(i));
         }
     }

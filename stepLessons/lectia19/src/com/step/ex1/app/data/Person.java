@@ -1,4 +1,4 @@
-package com.step.data;
+package com.step.ex1.app.data;
 
 import java.time.LocalDate;
 
