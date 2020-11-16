@@ -1,0 +1,2 @@
+Person{name='Ion', surname='Mocanu'}
+Person{name='Dumitru', surname='Popescu'}
