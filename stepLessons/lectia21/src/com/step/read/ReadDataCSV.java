@@ -24,7 +24,7 @@ public class ReadDataCSV {
             File file = new File("D:\\javaCodes\\codes\\" +
                     "stepLessons\\lectia21\\text.txt");
             if (!file.exists()) {
-                file.createNewFile();
+                boolean fileCreatedSuccessfully = file.createNewFile();
             }
 
             BufferedReader reader = new BufferedReader(new FileReader(file));
