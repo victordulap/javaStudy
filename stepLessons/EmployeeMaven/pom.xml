@@ -12,7 +12,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-<!--                <version>3.1</version> am introdus dar nu e necesar -->
+                <version>3.1</version>
                 <configuration>
                     <source>8</source>
                     <target>8</target>
@@ -20,5 +20,15 @@
             </plugin>
         </plugins>
     </build>
+
+    <dependencies>
+        <!-- https://mvnrepository.com/artifact/org.jdom/jdom -->
+        <dependency>
+            <groupId>org.jdom</groupId>
+            <artifactId>jdom</artifactId>
+            <version>2.0.2</version>
+        </dependency>
+
+    </dependencies>
 
 </project>

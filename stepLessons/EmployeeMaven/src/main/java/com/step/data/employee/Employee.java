@@ -13,6 +13,10 @@ public class Employee implements Serializable {
     private double salary;
     private Job job;
 
+    public Employee(String name) {
+        this.name = name;
+    }
+
     public Employee(String name, String surname, String idnp, LocalDate birthDate, double salary, Job job) {
         this.name = name;
         this.surname = surname;
