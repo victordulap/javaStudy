@@ -22,6 +22,7 @@ public class EmployeeManagerXML {
             abc.add(new Employee("Ion"));
             abc.add(new Employee("Ion"));
             abc.add(new Employee("Ion"));
+            writeToXml(abc);
             readXml();
         } catch (IOException | JDOMException e) {
             System.out.println(e.getMessage());

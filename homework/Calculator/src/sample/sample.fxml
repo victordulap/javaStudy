@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <Pane prefHeight="300.0" prefWidth="315.0" GridPane.columnIndex="1">
+         <children>
+            <Label fx:id="result" alignment="CENTER_RIGHT" layoutX="13.0" layoutY="14.0" prefHeight="42.0" prefWidth="287.0" style="-fx-background-color: #3f3f3f; -fx-padding: 0 10px 0 0;" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Button layoutX="13.0" layoutY="63.0" mnemonicParsing="false" onAction="#number7BtnClick" prefHeight="48.0" prefWidth="50.0" text="7" />
+            <Button layoutX="13.0" layoutY="121.0" mnemonicParsing="false" onAction="#number4BtnClick" prefHeight="48.0" prefWidth="50.0" text="4" />
+            <Button layoutX="13.0" layoutY="179.0" mnemonicParsing="false" onAction="#number1BtnClick" prefHeight="48.0" prefWidth="50.0" text="1" />
+            <Button layoutX="13.0" layoutY="237.0" mnemonicParsing="false" onAction="#number0BtnClick" prefHeight="48.0" prefWidth="50.0" text="0" />
+            <Button layoutX="73.0" layoutY="63.0" mnemonicParsing="false" onAction="#number8BtnClick" prefHeight="48.0" prefWidth="50.0" text="8" />
+            <Button layoutX="73.0" layoutY="121.0" mnemonicParsing="false" onAction="#number5BtnClick" prefHeight="48.0" prefWidth="50.0" text="5" />
+            <Button layoutX="73.0" layoutY="179.0" mnemonicParsing="false" onAction="#number2BtnClick" prefHeight="48.0" prefWidth="50.0" text="2" />
+            <Button layoutX="73.0" layoutY="237.0" mnemonicParsing="false" onAction="#dotBtnClick" prefHeight="48.0" prefWidth="50.0" text="." />
+            <Button layoutX="133.0" layoutY="63.0" mnemonicParsing="false" onAction="#number9BtnClick" prefHeight="48.0" prefWidth="50.0" text="9" />
+            <Button layoutX="133.0" layoutY="121.0" mnemonicParsing="false" onAction="#number6BtnClick" prefHeight="48.0" prefWidth="50.0" text="6" />
+            <Button layoutX="133.0" layoutY="179.0" mnemonicParsing="false" onAction="#number3BtnClick" prefHeight="48.0" prefWidth="50.0" text="3" />
+            <Button layoutX="133.0" layoutY="237.0" mnemonicParsing="false" onAction="#changeSymbolBtnClick" prefHeight="48.0" prefWidth="50.0" text="+/-" />
+            <Button layoutX="250.0" layoutY="62.0" mnemonicParsing="false" onAction="#clearBtnClick" prefHeight="48.0" prefWidth="50.0" text="C" />
+            <Button layoutX="194.0" layoutY="62.0" mnemonicParsing="false" onAction="#plusBtnClick" prefHeight="48.0" prefWidth="50.0" text="+" />
+            <Button layoutX="194.0" layoutY="120.0" mnemonicParsing="false" onAction="#minusBtnClick" prefHeight="48.0" prefWidth="50.0" text="-" />
+            <Button layoutX="194.0" layoutY="178.0" mnemonicParsing="false" onAction="#divideBtnClick" prefHeight="48.0" prefWidth="50.0" text="/" />
+            <Button layoutX="194.0" layoutY="237.0" mnemonicParsing="false" onAction="#multiplyBtnClick" prefHeight="48.0" prefWidth="50.0" text="*" />
+            <Button layoutX="250.0" layoutY="119.0" mnemonicParsing="false" onAction="#equalBtnClick" prefHeight="166.0" prefWidth="50.0" text="=" />
+         </children>
+      </Pane>
+   </children>
+</GridPane>
