@@ -1,9 +1,6 @@
 package sample.model;
 
-import javafx.beans.property.IntegerProperty;
-import javafx.beans.property.SimpleIntegerProperty;
-import javafx.beans.property.SimpleStringProperty;
-import javafx.beans.property.StringProperty;
+import javafx.beans.property.*;
 
 import java.time.LocalDate;
 
@@ -11,12 +8,18 @@ public class EmployeeModel {
     private IntegerProperty id;
     private StringProperty name;
     private IntegerProperty age;
-    private LocalDate date;
+    private ObjectProperty<LocalDate> birthDate = new SimpleObjectProperty<>();
 
     public EmployeeModel(Integer id, String name, Integer age) {
         this.id = new SimpleIntegerProperty(id);
         this.name =  new SimpleStringProperty(name);
         this.age =  new SimpleIntegerProperty(age);
+    }
+
+    public EmployeeModel(Integer id, String name, LocalDate birthDate) {
+        this.id = new SimpleIntegerProperty(id);
+        this.name =  new SimpleStringProperty(name);
+        this.birthDate =  new SimpleObjectProperty<>(birthDate);
     }
 
     public int getId() {
@@ -53,5 +56,17 @@ public class EmployeeModel {
 
     public void setAge(int age) {
         this.age.set(age);
+    }
+
+    public LocalDate getBirthDate() {
+        return birthDate.get();
+    }
+
+    public ObjectProperty<LocalDate> birthDateProperty() {
+        return birthDate;
+    }
+
+    public void setBirthDate(LocalDate birthDate) {
+        this.birthDate.set(birthDate);
     }
 }
